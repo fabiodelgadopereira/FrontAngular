@@ -1,3 +1,30 @@
-<p>
-  member-list works!
-</p>
+<div class="text-center mt-3">
+  <h2>Lista de clientes</h2>
+</div>
+
+<div class="container mt-3">
+  <button class="btn btn-danger" style="width:100px"> Add User</button>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th class="hidden">Id</th>
+      <th>Nome</th>
+      <th>Cidade</th>
+      <th>Email</th>
+      <th>Sexo</th>
+      <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let cliente of clientes">
+      <td class="hidden">{{cliente.id}}</td>
+      <td>{{cliente.nome}}</td>
+      <td>{{cliente.cidade}}</td>
+      <td>{{cliente.email}}</td>
+      <td>{{cliente.sexo}}</td>
+      <td><button class="btn btn-success" (click)="deleteCliente(cliente)" > Delete</button>
+        <button class="btn btn-success"  style="margin-left: 20px;"> Edit</button></td>
+    </tr>
+    </tbody>
+  </table>
+</div>

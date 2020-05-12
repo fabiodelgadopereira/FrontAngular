@@ -29,10 +29,10 @@ Execute `ng serve` de um servidor dev. Navegue para `http://localhost:4200/`. O 
 - angular2-switcher from infinity1207
 
 ### Bibliotecas importadas
-npm i alertifyjs
-npm i @auth0/angular-jwt,
-npm i ngx-bootstrapp --save
-npm i bootswatch
+- npm i alertifyjs
+- npm i @auth0/angular-jwt,
+- npm i ngx-bootstrapp --save
+- npm i bootswatch
 
 ## Suporte
 

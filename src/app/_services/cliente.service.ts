@@ -17,8 +17,8 @@ export class ClienteService {
   baseUrl = environment.apiUrl;
   constructor(private http: HttpClient) { }
 
-  getClientes(): Observable<Cliente[]> {
-    return this.http.get<Cliente[]>(this.baseUrl + 'Cliente', httpOptions);
+  getClientes(p): Observable<Cliente[]> {
+    return this.http.get<Cliente[]>(this.baseUrl + 'Cliente?PageNumber='+p, httpOptions);
   }
 
   getCliente(id): Observable<Cliente[]> {

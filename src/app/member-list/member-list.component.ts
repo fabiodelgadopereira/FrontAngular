@@ -10,18 +10,31 @@ import { Cliente } from '../_models/cliente';
 })
 export class MemberListComponent implements OnInit {
   clientes: Cliente[];
+  totalRecordCount: number;
+  selectedPage: number;
+  recordsPerPage: number;
 
   constructor(private clienteService: ClienteService, private alertify: AlertifyService
-    ) { }
+    ) {
+      this.totalRecordCount = 330;
+      this.recordsPerPage = 10;
+      this.selectedPage = 1;
+    }
 
   ngOnInit() {
     this.loadClientes();
   }
 
+  selectPage(page: number) {
+    this.selectedPage = page;
+    this.loadClientes();
+  }
+
   loadClientes() {
-  this.clienteService.getClientes().subscribe((clientes: Cliente[]) =>{
+  console.log(this.selectedPage);
+  this.clienteService.getClientes(this.selectedPage).subscribe((clientes: Cliente[]) =>{
   this.clientes = clientes;
-  }, error =>{
+  }, error => {
     this.alertify.error(error);
   });
 

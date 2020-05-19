@@ -16,7 +16,7 @@
     </tr>
     </thead>
     <tbody>
-    <tr *ngFor="let cliente of clientes">
+    <tr *ngFor="let cliente of clientes | paginate: { itemsPerPage: 10, currentPage: selectedPage,  totalItems: totalRecordCount }">
       <td class="hidden">{{cliente.id}}</td>
       <td>{{cliente.nome}}</td>
       <td>{{cliente.cidade}}</td>
@@ -27,4 +27,6 @@
     </tr>
     </tbody>
   </table>
+  <pagination-controls (pageChange)="selectedPage =$event; selectPage($event)">
+  </pagination-controls>
 </div>

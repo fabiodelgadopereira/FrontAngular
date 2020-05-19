@@ -11,7 +11,20 @@ Ela possui uma interfase para login e gerenciamento de uma base de dados exemplo
 
 ![GitHub Logo](/img/captura.png)
 
+### Utilização de paginação no Angular.
+
+![GitHub Logo](/img/captura2.png)
+
 ## Development server
+
+```shell
+git clone https://github.com/fabiodelgadopereira/FrontAngular
+cd FrontAngular
+npm install -g npm-check-updates
+ncu -u
+npm install 
+ng serve
+```
 
 Execute `ng serve` de um servidor dev. Navegue para `http://localhost:4200/`. O aplicativo será recarregado automaticamente se você alterar qualquer um dos arquivos de origem.
 
@@ -33,6 +46,7 @@ Execute `ng serve` de um servidor dev. Navegue para `http://localhost:4200/`. O 
 - npm i @auth0/angular-jwt,
 - npm i ngx-bootstrapp --save
 - npm i bootswatch
+- npm i ngx-pagination --save
 
 ## Suporte
 

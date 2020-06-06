@@ -3,13 +3,13 @@
 </div>
 
 <div class="container mt-3">
-  <button class="btn btn-danger" style="width:100px"> Add User</button>
+  <button class="btn btn-danger"  (click)="addCliente()"  style="width:100px"> Add User</button>
   <table class="table table-striped">
     <thead>
     <tr>
       <th class="hidden">Id</th>
       <th>Nome</th>
-      <th class="email">Cidade</th>
+      <th>Cidade</th>
       <th>Email</th>
       <th>Sexo</th>
       <th></th>
@@ -20,10 +20,10 @@
       <td class="hidden">{{cliente.Id}}</td>
       <td>{{cliente.Nome}}</td>
       <td>{{cliente.Cidade}}</td>
-      <td class="email">{{cliente.Email}}</td>
+      <td >{{cliente.Email}}</td>
       <td>{{cliente.Sexo}}</td>
       <td><button class="btn btn-success" (click)="deleteCliente(cliente)" > Delete</button>
-        <button class="btn btn-success"  style="margin-left: 20px;"> Edit</button></td>
+        <button class="btn btn-success" (click)="editarCliente(cliente)" style="margin-left: 20px;"> Edit</button></td>
     </tr>
     </tbody>
   </table>

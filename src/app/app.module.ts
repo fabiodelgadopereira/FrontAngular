@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule, HttpHeaders  } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ErrorInterceptorProvider } from './_services/error.interceptor';
 import { JwtModule } from '@auth0/angular-jwt';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -21,6 +21,8 @@ import { AuthService } from './_services/auth.service';
 import { AlertifyService } from './_services/alertify.service';
 import { AuthGuard } from './_guards/auth.guard';
 import {NgxPaginationModule} from 'ngx-pagination';
+import { MemberEditComponent } from './member-edit/member-edit.component';
+import { MemberAddComponent } from './member-add/member-add.component';
 
 export function getToken() {
    return localStorage.getItem('token');
@@ -33,8 +35,12 @@ export function getToken() {
       RegisterComponent,
       HomeComponent,
       MemberListComponent,
+      MemberAddComponent,
+      MemberAddComponent,
       ListsComponent,
-      MessagesComponent
+      MessagesComponent,
+      MemberEditComponent,
+      MemberAddComponent
    ],
    imports: [
       BrowserModule,
@@ -53,6 +59,7 @@ export function getToken() {
       BsDropdownModule.forRoot(),
       RouterModule.forRoot(appRoutes),
       NgxPaginationModule,
+      ReactiveFormsModule,
    ],
    providers: [
       AuthService,

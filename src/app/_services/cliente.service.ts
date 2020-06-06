@@ -28,4 +28,11 @@ export class ClienteService {
   deleteCliente(id): Observable<Cliente[]> {
     return this.http.delete<Cliente[]>(this.baseUrl + 'Cliente/' + id, httpOptions);
   }
+  addCliente(cliente: Cliente): Observable<Cliente[]> {
+    return this.http.post<Cliente[]>(this.baseUrl + 'Cliente/',  cliente, httpOptions);
+  }
+  editCliente(cliente: Cliente): Observable<Cliente[]> {
+    console.log(cliente);
+    return this.http.put<Cliente[]>(this.baseUrl + 'Cliente/',  cliente, httpOptions);
+  }
 }

@@ -9,11 +9,19 @@ Olá! Seja bem vindo ;)
 Essa aplicação tem como objetivo disponibillizar um front end para as APIs desenvolvidas em .Net core e Python disponibilizadas nessa conta do github.
 Ela possui uma interfase para login e gerenciamento de uma base de dados exemplo de clientes.
 
-![GitHub Logo](/img/captura.png)
+![GitHub Logo](/img/main.gif)
 
-### Utilização de paginação no Angular.
+### Cadastro de usuário com persistencia em banco de dados (feito pelo backend)
+
+![GitHub Logo](/img/registro.PNG)
+
+### Utilização de server side paging
 
 ![GitHub Logo](/img/captura2.png)
+
+### Cadastro, atualização e deleção de clientes
+
+![GitHub Logo](/img/cadastro_de_cliente.PNG)
 
 ## Development server
 

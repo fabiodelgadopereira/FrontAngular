@@ -1,0 +1,30 @@
+<div class="text-center mt-3">
+  <h2>Cadastrar cliente</h2>
+</div>
+<div class="container mt-3">
+
+  <form [formGroup]="addForm" (ngSubmit)="AddCliente()">
+    <div class="form-group">
+      <label for="Nome">Nome:</label>
+      <input type="text" formControlName="Nome" placeholder="Nome" name="Nome" class="form-control" id="Nome">
+    </div>
+
+    <div class="form-group">
+      <label for="Cidade">Cidade:</label>
+      <input type="text" formControlName="Cidade" placeholder="Cidade" name="Cidade" class="form-control" id="Cidade">
+    </div>
+
+    <div class="form-group">
+      <label for="Email">Email:</label>
+      <input formControlName="Email" placeholder="Email" name="Email" class="form-control" id="Email">
+    </div>
+
+    <div class="form-group">
+      <label for="Sexo">Sexo:</label>
+      <input formControlName="Sexo" placeholder="Sexo" name="Sexo" class="form-control" id="Sexo">
+    </div>
+
+    <button class="btn btn btn-light" (click)="cancel()" >Cancelar</button> &nbsp;
+    <button class="btn btn-success">Cadastrar</button>
+  </form>
+</div>

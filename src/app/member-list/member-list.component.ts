@@ -31,9 +31,9 @@ export class MemberListComponent implements OnInit {
   }
 
   loadClientes() {
-  console.log(this.selectedPage);
-  this.clienteService.getClientes(this.selectedPage).subscribe((clientes: Cliente[]) =>{
-  this.clientes = clientes;
+  this.clienteService.getClientes(this.selectedPage).subscribe((entrada: any) => {
+  this.totalRecordCount = entrada.count;
+  this.clientes = entrada.data;
   }, error => {
     this.alertify.error(error);
   });
@@ -41,8 +41,7 @@ export class MemberListComponent implements OnInit {
   }
 
   deleteCliente(cliente: Cliente): void {
-    console.log(cliente.id);
-    this.clienteService.deleteCliente(cliente.id)
+    this.clienteService.deleteCliente(cliente.Id)
       .subscribe( data => {
         this.clientes = this.clientes.filter(u => u !== cliente);
       });

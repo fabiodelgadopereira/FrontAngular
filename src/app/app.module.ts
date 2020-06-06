@@ -43,7 +43,6 @@ export function getToken() {
       JwtModule.forRoot({
          config: {
             tokenGetter: function  tokenGetter() {
-               console.log('tokenGetter called = ' + localStorage.getItem('token') );
                return     localStorage.getItem('token');
              },
            whitelistedDomains: ['localhost:5000'],

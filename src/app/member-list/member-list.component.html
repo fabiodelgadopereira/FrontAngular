@@ -9,7 +9,7 @@
     <tr>
       <th class="hidden">Id</th>
       <th>Nome</th>
-      <th>Cidade</th>
+      <th class="email">Cidade</th>
       <th>Email</th>
       <th>Sexo</th>
       <th></th>
@@ -17,11 +17,11 @@
     </thead>
     <tbody>
     <tr *ngFor="let cliente of clientes | paginate: { itemsPerPage: 10, currentPage: selectedPage,  totalItems: totalRecordCount }">
-      <td class="hidden">{{cliente.id}}</td>
-      <td>{{cliente.nome}}</td>
-      <td>{{cliente.cidade}}</td>
-      <td>{{cliente.email}}</td>
-      <td>{{cliente.sexo}}</td>
+      <td class="hidden">{{cliente.Id}}</td>
+      <td>{{cliente.Nome}}</td>
+      <td>{{cliente.Cidade}}</td>
+      <td class="email">{{cliente.Email}}</td>
+      <td>{{cliente.Sexo}}</td>
       <td><button class="btn btn-success" (click)="deleteCliente(cliente)" > Delete</button>
         <button class="btn btn-success"  style="margin-left: 20px;"> Edit</button></td>
     </tr>

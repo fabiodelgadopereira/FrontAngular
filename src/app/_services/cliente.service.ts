@@ -18,7 +18,7 @@ export class ClienteService {
   constructor(private http: HttpClient) { }
 
   getClientes(p): Observable<Cliente[]> {
-    return this.http.get<Cliente[]>(this.baseUrl + 'Cliente?PageNumber='+p, httpOptions);
+    return  this.http.get<Cliente[]>(this.baseUrl + 'Cliente?PageIndex=' + p + '&PageSize=10' , httpOptions);
   }
 
   getCliente(id): Observable<Cliente[]> {

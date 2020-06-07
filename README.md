@@ -22,6 +22,10 @@ Ela possui uma interfase para login e gerenciamento de uma base de dados exemplo
 ### Cadastro, atualização e deleção de clientes
 
 ![GitHub Logo](/img/cadastro_de_cliente.PNG)
+
+### Upload de arquivos para o servidor, utilizando backend
+
+![GitHub Logo](/img/upload.png)
 ## Development server
 
 ```shell

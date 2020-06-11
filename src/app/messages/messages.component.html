@@ -1,3 +1,44 @@
-<p>
-  messages works!
-</p>
+<br>
+<div class="container">
+  <div class="row">
+      <div class="col">
+          <div class="card">
+              <div class="card-header bg-primary text-white"><i class="fa fa-envelope"></i> Contato
+              </div>
+              <div class="card-body">
+                  <form [formGroup]="addForm" (ngSubmit)="enviar()">
+                      <div class="form-group">
+                          <label for="name" >Nome</label>
+                          <input type="text"  formControlName="Nome" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Digite seu nome" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="email">E-mail para contato</label>
+                          <input type="email"  formControlName="Email" placeholder="Email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Digite seu e-mail" required>
+                          <small id="emailHelp" class="form-text text-muted">Não compartilharemos seu email com mais ninguém.</small>
+                      </div>
+                      <div class="form-group">
+                          <label for="message">Messagem</label>
+                          <textarea formControlName="Mensagem"  class="form-control" id="message" rows="6" required></textarea>
+                      </div>
+                      <div class="mx-auto">
+                      <button type="submit" class="btn btn-primary text-right">Enviar</button></div>
+                  </form>
+              </div>
+          </div>
+      </div>
+      <div class="col-12 col-sm-4">
+          <div class="card bg-light mb-3">
+              <div class="card-header bg-success text-white text-uppercase"><i class="fa fa-home"></i> MUNDO DA LUA</div>
+              <div class="card-body">
+                  <p>Rua Zapara, 97</p>
+                  <p>05434-030 São Paulo</p>
+                  <p>Brasil</p>
+                  <p>Email : email@example.com</p>
+                  <p>Tel. +55 2345MEIA78</p>
+
+              </div>
+
+          </div>
+      </div>
+  </div>
+</div>

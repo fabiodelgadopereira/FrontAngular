@@ -26,6 +26,9 @@ Ela possui uma interfase para login e gerenciamento de uma base de dados exemplo
 ### Upload de arquivos para o servidor, utilizando backend
 
 ![GitHub Logo](/img/upload.png)
+### Página de contato utilizando backend (SMTP)
+
+![GitHub Logo](/img/email.PNG)
 ## Development server
 
 ```shell

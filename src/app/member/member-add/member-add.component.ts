@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { ClienteService } from '../_services/cliente.service';
-import { AlertifyService } from '../_services/alertify.service';
-import { Cliente } from '../_models/cliente';
+import { ClienteService } from '../../_services/cliente.service';
+import { AlertifyService } from '../../_services/alertify.service';
+import { Cliente } from '../../_models/cliente';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
-import { AuthService } from '../_services/auth.service';
+import { AuthService } from '../../_services/auth.service';
 import {Router} from '@angular/router';
 
 @Component({

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ClienteService } from '../_services/cliente.service';
-import { AlertifyService } from '../_services/alertify.service';
+import { ClienteService } from '../../_services/cliente.service';
+import { AlertifyService } from '../../_services/alertify.service';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {Router, Params, ActivatedRoute} from '@angular/router';
 

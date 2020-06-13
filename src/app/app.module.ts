@@ -12,8 +12,8 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { RegisterComponent } from './register/register.component';
 import { HomeComponent } from './home/home.component';
-import { MemberListComponent } from './member-list/member-list.component';
-import { ListsComponent } from './lists/lists.component';
+import { MemberListComponent } from './member/member-list/member-list.component';
+import { ListsComponent } from './files/files.component';
 import { MessagesComponent } from './messages/messages.component';
 import { appRoutes } from './routes';
 import { ClienteService } from './_services/cliente.service';
@@ -21,8 +21,8 @@ import { AuthService } from './_services/auth.service';
 import { AlertifyService } from './_services/alertify.service';
 import { AuthGuard } from './_guards/auth.guard';
 import {NgxPaginationModule} from 'ngx-pagination';
-import { MemberEditComponent } from './member-edit/member-edit.component';
-import { MemberAddComponent } from './member-add/member-add.component';
+import { MemberEditComponent } from './member/member-edit/member-edit.component';
+import { MemberAddComponent } from './member/member-add/member-add.component';
 
 export function getToken() {
    return localStorage.getItem('token');

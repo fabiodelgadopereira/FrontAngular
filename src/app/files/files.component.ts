@@ -12,8 +12,8 @@ const httpOptions = {
 
 @Component({
   selector: 'app-lists',
-  templateUrl: './lists.component.html',
-  styleUrls: ['./lists.component.css']
+  templateUrl: './files.component.html',
+  styleUrls: ['./files.component.css']
 })
 export class ListsComponent implements OnInit {
   baseUrl = environment.apiUrl;
